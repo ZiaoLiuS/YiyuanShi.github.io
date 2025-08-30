@@ -6,44 +6,81 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>一元市电视台 - 《拥抱科学》节目外包员工招募</title>
     <style>
-        /* 1998年地方电视台官方招聘页风格 */
+        /* 1998年电视台官方招聘页风格 (继承自TV主页部分样式) */
         body {
-            font-family: "宋体", "KaiTi", serif; /* 官方常用字体 */
-            background-color: #F0F0F0; /* 浅灰色背景，简洁正式 */
+            font-family: "宋体", "KaiTi", serif;
+            background-color: #E6E6E6;
             color: #333;
             margin: 0;
             padding: 20px;
             font-size: 14px;
             line-height: 1.6;
-            text-align: center; /* 内容居中 */
         }
 
         .container {
-            width: 750px; /* 固定宽度，当年常用 */
+            width: 780px;
             margin: 0 auto;
             background-color: #FFFFFF;
-            border: 1px solid #A0A0A0; /* 简洁的边框 */
-            padding: 25px 35px;
-            box-shadow: 3px 3px 8px rgba(0,0,0,0.2); /* 轻微的立体感 */
-            text-align: left; /* 内容左对齐 */
+            border: 1px solid #999999;
+            padding: 0;
+            box-shadow: 3px 3px 8px rgba(0,0,0,0.2);
         }
 
-        .tv-header {
-            background-color: #000080; /* 深蓝色，代表电视台的权威性 */
+        .header {
+            background-color: #000080;
             color: #FFFFFF;
             padding: 15px 0;
-            margin: -25px -35px 25px -35px; /* 扩展到容器边缘 */
-            font-size: 26px;
+            font-size: 28px;
             font-weight: bold;
-            letter-spacing: 2px;
+            letter-spacing: 3px;
             text-shadow: 1px 1px 2px #000;
             text-align: center;
+        }
+        .header .slogan {
+            font-size: 16px;
+            font-weight: normal;
+            letter-spacing: 1px;
+            margin-top: 5px;
+            opacity: 0.9;
+        }
+
+        .navigation {
+            background-color: #D0D0D0;
+            border-bottom: 1px solid #999999;
+            padding: 8px 0;
+            text-align: center;
+            font-size: 15px;
+            font-weight: bold;
+        }
+        .navigation a {
+            color: #000080;
+            text-decoration: none;
+            padding: 0 15px;
+            border-right: 1px solid #BBBBBB;
+            white-space: nowrap;
+        }
+        .navigation a:last-child {
+            border-right: none;
+        }
+        .navigation a:hover {
+            color: #CC0000;
+            text-decoration: underline;
+        }
+        .navigation a.current-page {
+            color: #CC0000;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .main-content {
+            padding: 25px 35px;
+            text-align: left;
         }
 
         h1 {
             font-size: 22px;
             color: #000080;
-            border-bottom: 2px solid #000080; /* 标题下划线，正式感 */
+            border-bottom: 2px solid #000080;
             padding-bottom: 8px;
             margin-top: 0;
             margin-bottom: 25px;
@@ -60,7 +97,7 @@
         }
 
         ul {
-            list-style-type: disc; /* 圆点列表 */
+            list-style-type: disc;
             margin-left: 25px;
             padding-left: 0;
             margin-bottom: 20px;
@@ -71,7 +108,7 @@
         }
 
         strong {
-            color: #CC0000; /* 强调红色 */
+            color: #CC0000;
         }
 
         .contact-info {
@@ -86,102 +123,103 @@
             text-align: center;
         }
 
-        .button {
-            background-color: #C0C0C0;
-            border: 2px outset #E0E0E0; /* 3D效果 */
-            padding: 6px 15px;
-            font-size: 14px;
-            cursor: pointer;
-            color: #333;
-            text-decoration: none;
-            display: inline-block;
-            margin-top: 15px;
-        }
-        .button:active {
-            border: 2px inset #E0E0E0; /* 点击效果 */
-        }
-
         .footer {
-            margin-top: 30px;
-            font-size: 12px;
-            color: #666;
+            background-color: #D0D0D0;
+            color: #555;
             text-align: center;
-            border-top: 1px solid #E0E0E0;
-            padding-top: 15px;
+            padding: 10px 0;
+            font-size: 12px;
+            border-top: 1px solid #999;
+            margin-top: 20px;
+        }
+        .footer .hit-counter {
+            background-color: #FFFFCC;
+            border: 1px solid #FFCC00;
+            padding: 3px 8px;
+            display: inline-block;
+            margin-left: 10px;
+            font-weight: bold;
+            color: #CC0000;
         }
     </style>
 </head>
 <body>
 
     <div class="container">
-        <div class="tv-header">
-            一元市电视台
+        <div class="header">
+            一元市电视台官方网站
+            <p class="slogan">深入民心，传递真实</p>
         </div>
 
-        <h1>《拥抱科学》节目外包员工招募公告</h1>
-
-        <p>亲爱的社会各界精英、有志青年：</p>
-        <p>为响应国家科技兴国的号召，一元市电视台将隆重推出大型科普专题节目——<strong>《拥抱科学》</strong>。该节目旨在普及科学知识，揭示科学奥秘，激发全社会对科学的兴趣。</p>
-        <p>现面向社会公开招募<strong>3-5名外包员工</strong>，与我们共同探索未知，点亮科学之光：</p>
-
-        <h2>招募职位及要求：</h2>
-        <ul>
-            <li><strong>节目摄影 (1-2名)</strong>：
-                <ul>
-                    <li>具备专业摄影摄像技能，能熟练操作广播级摄像设备。</li>
-                    <li>熟悉电视节目拍摄流程，有相关节目制作经验者优先。</li>
-                    <li>具备良好的艺术构图和视觉表达能力。</li>
-                </ul>
-            </li>
-            <li><strong>节目主持人 (1名)</strong>：
-                <ul>
-                    <li>形象气质佳，普通话标准，口齿清晰，具备良好的临场应变和口头表达能力。</li>
-                    <li>热爱科普，对科学知识有浓厚兴趣，能以生动活泼的方式普及科学。</li>
-                    <li>有电视或广播主持经验者优先。</li>
-                </ul>
-            </li>
-            <li><strong>化妆师 (1名)</strong>：
-                <ul>
-                    <li>具备专业的化妆技能，能为节目主持人及嘉宾提供专业的妆发造型服务。</li>
-                    <li>熟悉电视节目录制对化妆的要求，有相关经验者优先。</li>
-                </ul>
-            </li>
-            <li><strong>后勤助理 (1名)</strong>：
-                <ul>
-                    <li>负责节目制作过程中的物资采购、场地协调、资料整理等辅助性工作。</li>
-                    <li>工作细心、负责，具备良好的沟通协调能力和团队协作精神。</li>
-                </ul>
-            </li>
-        </ul>
-
-        <h2>共同要求：</h2>
-        <ul>
-            <li>大专及以上学历（特别优秀者可适当放宽）。</li>
-            <li>具备良好的职业道德和团队协作精神。</li>
-            <li>能适应出差和加班的工作性质。</li>
-            <li>年龄35周岁以下，身体健康。</li>
-        </ul>
-
-        <h2>报名及联系方式：</h2>
-        <div class="contact-info">
-            <p><strong>待遇从优，具体事宜面议。</strong></p>
-            <p>有意者请携带个人简历、相关作品（如有）及学历证明，亲临一元市电视台人事部进行面试。</p>
-            <p>咨询电话：<strong>(010) 88888888</strong></p>
-            <p>面试地址：一元市广电路1号 一元市电视台人事部</p>
+        <div class="navigation">
+            <a href="tv_news.html">频道新闻</a>
+            <a href="tv_schedule.html">本周节目</a>
+            <a href="tv_recruitment.html" class="current-page">人才招募</a>
+            <a href="tv_about.html">关于我们</a>
+            <a href="tv_contact.html">联系方式</a>
         </div>
 
-        <p align="right"><em>一元市电视台 人力资源部 敬启</em><br><em>1998年3月1日</em></p>
+        <div class="main-content">
+            <h1>《拥抱科学》节目外包员工招募公告</h1>
 
-        <p align="center">
-            <a href="yiyuan_tv_homepage.html" class="button">返回电视台主页</a>
-            &nbsp;&nbsp;&nbsp;
-            <a href="#" class="button">打印本页</a>
-        </p>
+            <p>亲爱的社会各界精英、有志青年：</p>
+            <p>为响应国家科技兴国的号召，一元市电视台将隆重推出大型科普专题节目——<strong>《拥抱科学》</strong>。该节目旨在普及科学知识，揭示科学奥秘，激发全社会对科学的兴趣。</p>
+            <p>现面向社会公开招募<strong>3-5名外包员工</strong>，与我们共同探索未知，点亮科学之光：</p>
 
-    </div>
+            <h2>招募职位及要求：</h2>
+            <ul>
+                <li><strong>节目摄影 (1-2名)</strong>：
+                    <ul>
+                        <li>具备专业摄影摄像技能，能熟练操作广播级摄像设备。</li>
+                        <li>熟悉电视节目拍摄流程，有相关节目制作经验者优先。</li>
+                        <li>具备良好的艺术构图和视觉表达能力。</li>
+                    </ul>
+                </li>
+                <li><strong>节目主持人 (1名)</strong>：
+                    <ul>
+                        <li>形象气质佳，普通话标准，口齿清晰，具备良好的临场应变和口头表达能力。</li>
+                        <li>热爱科普，对科学知识有浓厚兴趣，能以生动活泼的方式普及科学。</li>
+                        <li>有电视或广播主持经验者优先。</li>
+                    </ul>
+                </li>
+                <li><strong>化妆师 (1名)</strong>：
+                    <ul>
+                        <li>具备专业的化妆技能，能为节目主持人及嘉宾提供专业的妆发造型服务。</li>
+                        <li>熟悉电视节目录制对化妆的要求，有相关经验者优先。</li>
+                    </ul>
+                </li>
+                <li><strong>后勤助理 (1名)</strong>：
+                    <ul>
+                        <li>负责节目制作过程中的物资采购、场地协调、资料整理等辅助性工作。</li>
+                        <li>工作细心、负责，具备良好的沟通协调能力和团队协作精神。</li>
+                    </ul>
+                </li>
+            </ul>
 
-    <div class="footer">
-        &copy; 1998 一元市电视台 版权所有 | 建议使用IE 3.0 或 Netscape Navigator 3.0 以上浏览器，800x600分辨率观看。
+            <h2>共同要求：</h2>
+            <ul>
+                <li>大专及以上学历（特别优秀者可适当放宽）。</li>
+                <li>具备良好的职业道德和团队协作精神。</li>
+                <li>能适应出差和加班的工作性质。</li>
+                <li>年龄35周岁以下，身体健康。</li>
+            </ul>
+
+            <h2>报名及联系方式：</h2>
+            <div class="contact-info">
+                <p><strong>待遇从优，具体事宜面议。</strong></p>
+                <p>有意者请携带个人简历、相关作品（如有）及学历证明，亲临一元市电视台人事部进行面试。</p>
+                <p>咨询电话：<strong>(010) 88888888</strong></p>
+                <p>面试地址：一元市广电路1号 一元市电视台人事部</p>
+            </div>
+
+            <p align="right"><em>一元市电视台 人力资源部 敬启</em><br><em>1998年3月1日</em></p>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 1998 一元市电视台 版权所有 | 地址：一元市广电路1号 | 电话：(010) 88888888</p>
+            <p>建议使用IE 3.0 或 Netscape Navigator 3.0 以上浏览器，800x600分辨率观看。</p>
+            <p>总访问人数：<span class="hit-counter">233456</span></p>
+        </div>
     </div>
 
 </body>

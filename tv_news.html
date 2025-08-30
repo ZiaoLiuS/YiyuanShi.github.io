@@ -4,9 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>一元市电视台官方网站 - 公元1998年</title>
+    <title>一元市电视台 - 频道新闻</title>
     <style>
-        /* 1998年电视台官方网站风格 */
+        /* 1998年电视台官方网站风格 (继承自TV主页部分样式) */
         body {
             font-family: "宋体", "KaiTi", serif;
             background-color: #E6E6E6;
@@ -57,7 +57,7 @@
             text-decoration: none;
             padding: 0 15px;
             border-right: 1px solid #BBBBBB;
-            white-space: nowrap; /* 防止导航项换行 */
+            white-space: nowrap;
         }
         .navigation a:last-child {
             border-right: none;
@@ -67,7 +67,7 @@
             text-decoration: underline;
         }
         .navigation a.current-page {
-            color: #CC0000; /* 当前页面链接颜色 */
+            color: #CC0000;
             text-decoration: none;
             font-weight: bold;
         }
@@ -105,37 +105,6 @@
             color: #555;
         }
 
-        .marquee-notice {
-            background-color: #FFFFCC;
-            padding: 8px 15px;
-            border: 1px solid #FFCC00;
-            margin-bottom: 20px;
-            font-weight: bold;
-            color: #CC0000;
-            text-align: center;
-        }
-
-        .quick-links {
-            text-align: center;
-            margin-top: 30px;
-            border-top: 1px dashed #CCC;
-            padding-top: 20px;
-        }
-        .quick-links a {
-            background-color: #C0C0C0;
-            border: 2px outset #E0E0E0;
-            padding: 8px 18px;
-            font-size: 14px;
-            cursor: pointer;
-            color: #333;
-            text-decoration: none;
-            display: inline-block;
-            margin: 5px 10px;
-        }
-        .quick-links a:active {
-            border: 2px inset #E0E0E0;
-        }
-
         .footer {
             background-color: #D0D0D0;
             color: #555;
@@ -165,7 +134,7 @@
         </div>
 
         <div class="navigation">
-            <a href="tv_news.html">频道新闻</a>
+            <a href="tv_news.html" class="current-page">频道新闻</a>
             <a href="tv_schedule.html">本周节目</a>
             <a href="tv_recruitment.html">人才招募</a>
             <a href="tv_about.html">关于我们</a>
@@ -173,45 +142,32 @@
         </div>
 
         <div class="main-content">
-            <div class="marquee-notice">
-                <marquee behavior="scroll" direction="left" scrollamount="4">
-                    【最新公告】一元市电视台节目调整通知：自3月5日起，《一元新闻联播》将提前至每晚7点播出！敬请收看！
-                </marquee>
-            </div>
-
             <h2 class="section-title">频道新闻</h2>
+
             <div class="item-box">
                 <h4>一元市两会圆满闭幕，共绘发展蓝图</h4>
-                <p>一元市人大十三届一次会议和政协十届一次会议于昨日圆满落下帷幕，会议审议通过了政府工作报告，并对未来五年发展进行了全面部署。</p>
+                <p>一元市人大十三届一次会议和政协十届一次会议于昨日圆满落下帷幕。会议审议通过了政府工作报告，并对未来五年发展进行了全面部署，为一元市的经济社会发展指明了方向。</p>
                 <p align="right"><small>发布日期：1998年3月1日</small></p>
             </div>
             <div class="item-box">
                 <h4>大型科普节目《拥抱科学》筹备进展顺利</h4>
-                <p>我台倾力打造的全新大型科普专题节目《拥抱科学》各项筹备工作进展顺利，将于近期与广大观众见面。节目组正面向社会招募优秀外包员工，详情请点击上方导航“人才招募”。</p>
+                <p>我台倾力打造的全新大型科普专题节目《拥抱科学》各项筹备工作进展顺利，将于近期与广大观众见面。节目组正面向社会招募优秀外包员工，详情请查阅“人才招募”栏目。</p>
                 <p align="right"><small>发布日期：1998年2月28日</small></p>
             </div>
-            <p align="right"><a href="tv_news.html" style="color: #0000FF; text-decoration: underline;">查看更多频道新闻 &raquo;</a></p>
-
-            <h2 class="section-title">本周精选节目</h2>
             <div class="item-box">
-                <h4>《一元新闻联播》</h4>
-                <p>每日晚间黄金时段播出，为您提供最权威、最及时的一元市本地新闻资讯。关注一元，洞悉发展。</p>
-                <p align="right"><small>播出时间：每日19:00</small></p>
+                <h4>市文化局组织开展“送文化下乡”活动</h4>
+                <p>为丰富广大农村地区群众的精神文化生活，市文化局与我台联合组织“送文化下乡”文艺演出，受到了当地群众的热烈欢迎。首场演出已在平安镇成功举办。</p>
+                <p align="right"><small>发布日期：1998年2月25日</small></p>
             </div>
             <div class="item-box">
-                <h4>《拥抱科学》</h4>
-                <p><strong>【特别推荐】</strong> 全新科普力作！带您探索科技奥秘，普及科学知识，点燃科学梦想。敬请期待首播！</p>
-                <p align="right"><small>首播时间：即将公布</small></p>
+                <h4>本台记者随团考察外地先进农业技术</h4>
+                <p>为学习借鉴外地先进农业技术和发展经验，我台记者随同市农业局考察团赴某省进行了为期一周的考察活动，并拍摄了大量珍贵资料，将用于后续节目制作。</p>
+                <p align="right"><small>发布日期：1998年2月20日</small></p>
             </div>
             <div class="item-box">
-                <h4>《一元市故事》</h4>
-                <p>讲述一元市的百年风云，挖掘历史文化底蕴，感受城市变迁，品味风土人情。</p>
-                <p align="right"><small>播出时间：每周六晚 20:30</small></p>
-            </div>
-            <p align="right"><a href="tv_schedule.html" style="color: #0000FF; text-decoration: underline;">查看完整节目表 &raquo;</a></p>
-
-            <div class="quick-links">
-                <a href="index.html" class="button">返回一元市网络论坛</a>
+                <h4>一元市电视塔检修完成，信号覆盖能力进一步增强</h4>
+                <p>经过为期半个月的全面检修，一元市电视塔各项设备已恢复正常运行，并进行了技术升级。此举将进一步提升我台电视信号的覆盖范围和稳定性，为全市人民提供更清晰的收看体验。</p>
+                <p align="right"><small>发布日期：1998年2月10日</small></p>
             </div>
         </div>
 
