@@ -1,0 +1,381 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公元1998年 - 一元市网络论坛</title>
+    <style>
+        /* 1998年风格CSS (保持与之前一致，只调整年份相关内容) */
+        body {
+            font-family: "宋体", "KaiTi", serif; /* 模拟当年常见中文字体 */
+            background-color: #E0E0E0; /* 浅灰色背景，模拟当年电脑屏幕的色彩 */
+            color: #333; /* 主体文字颜色 */
+            margin: 0;
+            padding: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        table {
+            border: 1px solid #999; /* 经典的表格边框 */
+            border-collapse: collapse; /* 合并边框 */
+            width: 90%; /* 页面宽度通常不会占满全屏 */
+            margin: 15px auto; /* 居中显示 */
+            background-color: #F8F8F8; /* 表格内部浅色背景 */
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2); /* 模拟一点点3D效果 */
+        }
+
+        td {
+            padding: 8px;
+            vertical-align: top;
+            border: 1px solid #CCC; /* 单元格边框 */
+        }
+
+        .header {
+            background-color: #000080; /* 深蓝色头部背景 */
+            color: #FFFFFF; /* 白色文字 */
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .marquee-container {
+            background-color: #FFFFCC; /* 醒目的黄色背景，常用于通知 */
+            padding: 5px 0;
+            border-bottom: 1px solid #999;
+            text-align: center;
+            font-weight: bold;
+            color: #CC0000; /* 红色字体 */
+        }
+
+        .sidebar {
+            width: 180px; /* 左侧边栏宽度 */
+            background-color: #E8E8E8; /* 边栏背景色 */
+            border-right: 1px solid #CCC;
+            padding: 10px;
+        }
+
+        .sidebar h3 {
+            font-size: 16px;
+            color: #000080;
+            border-bottom: 1px dashed #CCC;
+            padding-bottom: 5px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none; /* 去除列表点 */
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 8px;
+        }
+
+        .sidebar ul li a {
+            color: #0000FF; /* 经典蓝色链接 */
+            text-decoration: underline; /* 默认下划线 */
+            display: block;
+            padding: 3px 0;
+        }
+
+        .sidebar ul li a:hover {
+            color: #FF0000; /* 鼠标悬停变红色 */
+            text-decoration: none; /* 去除下划线 */
+        }
+
+        .main-content h2 {
+            font-size: 20px;
+            color: #000080;
+            border-bottom: 2px solid #000080;
+            padding-bottom: 5px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .main-content h3 {
+            font-size: 16px;
+            color: #000080;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .news-item, .topic-item {
+            background-color: #FFFFFF;
+            border: 1px dashed #CCC;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .news-item h4, .topic-item h4 {
+            font-size: 15px;
+            margin: 0 0 5px 0;
+            color: #0055AA;
+        }
+
+        .news-item p, .topic-item p {
+            margin: 0;
+            font-size: 13px;
+        }
+
+        /* 招聘广告样式 - 弱化处理 */
+        .recruitment-ad {
+            background-color: #F0F8FF; /* 浅蓝色背景，不刺眼 */
+            border: 1px solid #A0A0A0; /* 柔和的灰色边框 */
+            padding: 15px;
+            margin-bottom: 15px; /* 保持与内容间距 */
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .recruitment-ad h3 {
+            color: #000080; /* 与其他标题颜色一致 */
+            font-size: 18px;
+            text-align: center;
+            border-bottom: 1px solid #000080; /* 与其他标题底线一致 */
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .recruitment-ad ul {
+            list-style-type: disc; /* 圆点列表 */
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        .recruitment-ad p {
+            margin-top: 10px;
+        }
+
+        /* 节目宣传广告样式 */
+        .show-promotion {
+            background-color: #E6F3FF; /* 浅蓝色背景 */
+            border: 1px solid #99CCFF; /* 柔和的蓝色边框 */
+            padding: 15px;
+            margin-bottom: 20px; /* 增加与下方内容的间距 */
+            text-align: center;
+        }
+
+        .show-promotion h2 {
+            color: #000080;
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: none; /* 避免双重下划线 */
+        }
+
+        .show-promotion p {
+            font-size: 15px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .show-promotion .button {
+            margin-top: 15px;
+        }
+
+        /* 侧边栏广告块样式 */
+        .ad-block-sidebar {
+            background-color: #F8F8F8; /* 浅背景色 */
+            border: 1px solid #E0E0E0; /* 柔和边框 */
+            padding: 8px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            color: #555;
+        }
+        .ad-block-sidebar h4 {
+            font-size: 14px;
+            color: #000080;
+            margin: 0 0 5px 0;
+            border-bottom: 1px dashed #DDD; /* 虚线分隔 */
+            padding-bottom: 3px;
+        }
+        .ad-block-sidebar p {
+            margin: 3px 0;
+        }
+
+        /* 新增样式：隐藏主内容区的招聘广告 */
+        .hidden-recruitment-ad {
+            display: none;
+        }
+
+        .footer {
+            background-color: #C0C0C0; /* 底部灰色 */
+            color: #555;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 12px;
+            border-top: 1px solid #999;
+            margin-top: 15px;
+        }
+
+        .hit-counter {
+            background-color: #FFFFCC;
+            border: 1px solid #FFCC00;
+            padding: 3px 8px;
+            display: inline-block;
+            margin-left: 10px;
+            font-weight: bold;
+            color: #CC0000;
+        }
+
+        /* 模拟当年按钮风格 */
+        .button {
+            background-color: #C0C0C0;
+            border: 2px outset #E0E0E0; /* 3D效果 */
+            padding: 5px 10px;
+            font-size: 13px;
+            cursor: pointer;
+            color: #333;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px 0;
+        }
+        .button:active {
+            border: 2px inset #E0E0E0; /* 点击效果 */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        欢迎来到 公元1998年 - 一元市网络论坛
+    </div>
+
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="4">
+            今日热点：互联网技术日新月异，网络改变生活！—— 论坛维护公告：系统将于每晚23:00-24:00进行维护，请大家错峰访问！
+        </marquee>
+    </div>
+
+    <table>
+        <tr>
+            <td class="sidebar">
+                <h3>论坛导航</h3>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="forum.html">论坛区总览</a></li>
+                    <li><a href="news.html">新闻中心</a></li>
+                    <li><a href="software.html">软件下载</a></li>
+                    <li><a href="member.html">会员中心</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="forum.html">最新帖子</a></li>
+                    <li><a href="forum.html">热门话题</a></li>
+                    <li><a href="#">今日在线</a></li>
+                    <li><a href="#">我的收藏</a></li>
+                </ul>
+
+                <h3>友情链接</h3>
+                <ul>
+                    <li><a href="#" target="_blank">中国电信</a></li>
+                    <li><a href="#" target="_blank">国际互联网</a></li>
+                    <li><a href="#" target="_blank">XX电脑城</a></li>
+                    <li><a href="yiyuan_tv_homepage.html" target="_blank">一元市电视台</a></li> <!-- 新增链接 -->
+                </ul>
+
+                <br>
+                <h3>本地商家推荐</h3>
+                <!-- 六毛啤酒屋广告 -->
+                <div class="ad-block-sidebar">
+                    <h4>六毛啤酒屋</h4>
+                    <p>地址：一元市两市区</p>
+                    <p>凉爽夏日，啤酒烤串好去处！</p>
+                </div>
+                <!-- 法自然斋广告 -->
+                <div class="ad-block-sidebar">
+                    <h4>法自然斋</h4>
+                    <p><strong>知天命，改运势，助您人生顺遂！</strong></p>
+                    <p>主理：易学高人 <strong>单道长</strong></p>
+                    <p>业务范围：八字命理、周易预测、专业起名、风水堪舆、择吉日等。</p>
+                    <p>预约电话：(010) 66668888</p>
+                    <p>地址：一元市平安路88号</p>
+                </div>
+                <!-- 电脑维修与组装广告 -->
+                <div class="ad-block-sidebar">
+                    <h4>电脑维修与组装</h4>
+                    <p>您的电脑卡慢？系统崩溃？专业维修，硬件升级，组装配置！</p>
+                    <p><strong>一元市电子城B座101</strong></p>
+                    <p>电话：(010) 77776666</p>
+                </div>
+                <!-- 新起点外语培训广告 -->
+                <div class="ad-block-sidebar">
+                    <h4>新起点外语培训</h4>
+                    <p>学外语，走向世界！</p>
+                    <p>英语、日语、俄语零基础班，口语速成班火热招生中！</p>
+                    <p>地址：一元市文化路99号</p>
+                    <p>电话：(010) 55554444</p>
+                </div>
+
+                <br>
+                <!-- 招聘广告摘要 (在侧边栏) -->
+                <div class="recruitment-ad">
+                    <h3>【招聘启事】</h3>
+                    <p align="center">一元市电视台为<br>《拥抱科学》节目<br>招募外包员工！</p>
+                    <p align="center">详情点击查看。</p>
+                    <p align="center"><a href="tv_recruitment.html" class="button">查看详情</a></p>
+                </div>
+            </td>
+
+            <td class="main-content">
+                <h2>最新新闻播报</h2>
+                <div class="news-item">
+                    <h4>三峡工程二期工程全面开工！</h4>
+                    <p>举世瞩目的三峡水利枢纽工程二期项目于今日正式全面开工，标志着这项世纪工程迈入新的建设阶段。</p>
+                    <p align="right"><small>发布日期：1998年3月1日</small></p>
+                </div>
+                <div class="news-item">
+                    <h4>回顾：香港回归祖国，举国欢庆！</h4>
+                    <p>自1997年7月1日香港回归以来，特区政府运作平稳，经济持续发展，社会各界积极参与建设，紫荆花在香江盛放！</p>
+                    <p align="right"><small>发布日期：1998年2月25日</small></p>
+                </div>
+                <p align="right"><a href="news.html">查看更多新闻 &raquo;</a></p>
+
+                <!-- 《拥抱科学》开播宣传 -->
+                <div class="show-promotion">
+                    <h2>【隆重推荐】大型科普节目《拥抱科学》即将开播！</h2>
+                    <p>一元市电视台倾力打造，聚焦前沿科技，探索未知世界，普及科学知识，点燃科学梦想！</p>
+                    <p>带您走进神奇的科学殿堂，领略科学的魅力！</p>
+                    <p>敬请留意本台后续公告及报纸预告，不要错过！</p>
+                    <a href="#" class="button">立即预约收看提醒</a>
+                </div>
+
+                <h2>热门论坛话题</h2>
+                <div class="topic-item">
+                    <h4><a href="museum_ghost.html">讨论：一元市博物馆闹鬼的传说</a></h4>
+                    <p>（楼主：探灵者）据说一元市博物馆每到春天，园内的桃花就会渗出殷红的液体，宛如流血；到了晚上，整片博物馆上空都会落满乌鸦，发出凄厉的叫声。这真的是灵异事件吗？大家有没有听过类似的传闻，或者有亲身经历的？</p>
+                    <p align="right"><small>回复：350 | 最后回复：1998-03-02</small></p>
+                </div>
+                <div class="topic-item">
+                    <h4>讨论：哪款VCD播放机性价比最高？</h4>
+                    <p>（楼主：数码先锋）最近想买VCD，市面上品牌好多，新科、万燕、步步高…大家有什么推荐吗？</p>
+                    <p align="right"><small>回复：128 | 最后回复：1998-02-20</small></p>
+                </div>
+                <p align="right"><a href="forum.html">进入论坛区查看更多话题 &raquo;</a></p>
+
+
+                <!-- 招聘广告详细内容 (在主内容区，现在默认隐藏) -->
+
+            </td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        <p>&copy; 1998 一元市网络论坛 版权所有 | 建议使用IE 3.0 或 Netscape Navigator 3.0 以上浏览器，800x600分辨率观看。</p>
+        <span class="hit-counter">访问量：19980302次</span>
+        <a href="#" class="button">意见反馈</a>
+        <a href="#" class="button">我要发布</a>
+    </div>
+
+</body>
+</html>

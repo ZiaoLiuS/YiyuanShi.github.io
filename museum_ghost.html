@@ -1,0 +1,459 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>公元1998年 - 一元市网络论坛 - 博物馆闹鬼传说</title>
+    <style>
+        /* 1998年风格CSS (保持与之前一致) */
+        body {
+            font-family: "宋体", "KaiTi", serif;
+            background-color: #E0E0E0;
+            color: #333;
+            margin: 0;
+            padding: 15px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        table {
+            border: 1px solid #999;
+            border-collapse: collapse;
+            width: 90%;
+            margin: 15px auto;
+            background-color: #F8F8F8;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        }
+
+        td {
+            padding: 8px;
+            vertical-align: top;
+            border: 1px solid #CCC;
+        }
+
+        .header {
+            background-color: #000080;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 15px 0;
+            font-size: 24px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-shadow: 1px 1px 2px #000;
+        }
+
+        .marquee-container {
+            background-color: #FFFFCC;
+            padding: 5px 0;
+            border-bottom: 1px solid #999;
+            text-align: center;
+            font-weight: bold;
+            color: #CC0000;
+        }
+
+        .sidebar {
+            width: 180px;
+            background-color: #E8E8E8;
+            border-right: 1px solid #CCC;
+            padding: 10px;
+        }
+
+        .sidebar h3 {
+            font-size: 16px;
+            color: #000080;
+            border-bottom: 1px dashed #CCC;
+            padding-bottom: 5px;
+            margin-top: 15px;
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 8px;
+        }
+
+        .sidebar ul li a {
+            color: #0000FF;
+            text-decoration: underline;
+            display: block;
+            padding: 3px 0;
+        }
+
+        .sidebar ul li a:hover {
+            color: #FF0000;
+            text-decoration: none;
+        }
+
+        .main-content h2 {
+            font-size: 20px;
+            color: #000080;
+            border-bottom: 2px solid #000080;
+            padding-bottom: 5px;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .main-content h3 {
+            font-size: 16px;
+            color: #000080;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .topic-item {
+            background-color: #FFFFFF;
+            border: 1px dashed #CCC;
+            padding: 10px;
+            margin-bottom: 15px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .topic-item h4 {
+            font-size: 15px;
+            margin: 0 0 5px 0;
+            color: #0055AA;
+        }
+
+        .topic-item p {
+            margin: 0;
+            font-size: 13px;
+        }
+
+        .post-entry {
+            background-color: #FFFFFF;
+            border: 1px solid #D0D0D0;
+            padding: 15px;
+            margin-bottom: 15px;
+            box-shadow: 1px 1px 3px rgba(0,0,0,0.05);
+        }
+        .post-entry .author-info {
+            color: #666;
+            font-size: 12px;
+            margin-bottom: 10px;
+            border-bottom: 1px dashed #EEE;
+            padding-bottom: 5px;
+        }
+        .post-entry .post-content {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .post-entry .post-footer {
+            text-align: right;
+            font-size: 12px;
+            color: #999;
+        }
+
+        .ad-block-sidebar {
+            background-color: #F8F8F8;
+            border: 1px solid #E0E0E0;
+            padding: 8px;
+            margin-bottom: 10px;
+            font-size: 13px;
+            color: #555;
+        }
+        .ad-block-sidebar h4 {
+            font-size: 14px;
+            color: #000080;
+            margin: 0 0 5px 0;
+            border-bottom: 1px dashed #DDD;
+            padding-bottom: 3px;
+        }
+        .ad-block-sidebar p {
+            margin: 3px 0;
+        }
+
+        .recruitment-ad {
+            background-color: #F0F8FF;
+            border: 1px solid #A0A0A0;
+            padding: 15px;
+            margin-bottom: 15px;
+            text-align: left;
+            font-size: 14px;
+        }
+
+        .recruitment-ad h3 {
+            color: #000080;
+            font-size: 18px;
+            text-align: center;
+            border-bottom: 1px solid #000080;
+            padding-bottom: 8px;
+            margin-bottom: 15px;
+        }
+
+        .recruitment-ad ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            padding-left: 0;
+        }
+
+        .recruitment-ad p {
+            margin-top: 10px;
+        }
+
+        .button {
+            background-color: #C0C0C0;
+            border: 2px outset #E0E0E0;
+            padding: 5px 10px;
+            font-size: 13px;
+            cursor: pointer;
+            color: #333;
+            text-decoration: none;
+            display: inline-block;
+            margin: 5px 0;
+        }
+        .button:active {
+            border: 2px inset #E0E0E0;
+        }
+
+        .footer {
+            background-color: #C0C0C0;
+            color: #555;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 12px;
+            border-top: 1px solid #999;
+            margin-top: 15px;
+        }
+
+        .hit-counter {
+            background-color: #FFFFCC;
+            border: 1px solid #FFCC00;
+            padding: 3px 8px;
+            display: inline-block;
+            margin-left: 10px;
+            font-weight: bold;
+            color: #CC0000;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        欢迎来到 公元1998年 - 一元市网络论坛
+    </div>
+
+    <div class="marquee-container">
+        <marquee behavior="scroll" direction="left" scrollamount="4">
+            今日热点：互联网技术日新月异，网络改变生活！—— 论坛维护公告：系统将于每晚23:00-24:00进行维护，请大家错峰访问！
+        </marquee>
+    </div>
+
+    <table>
+        <tr>
+            <td class="sidebar">
+                <h3>论坛导航</h3>
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="forum.html">论坛区总览</a></li>
+                    <li><a href="news.html">新闻中心</a></li>
+                    <li><a href="software.html">软件下载</a></li>
+                    <li><a href="member.html">会员中心</a></li>
+                    <li><a href="contact.html">联系我们</a></li>
+                </ul>
+
+                <h3>快速链接</h3>
+                <ul>
+                    <li><a href="forum.html">最新帖子</a></li>
+                    <li><a href="forum.html">热门话题</a></li>
+                    <li><a href="#">今日在线</a></li>
+                    <li><a href="#">我的收藏</a></li>
+                </ul>
+
+                <h3>友情链接</h3>
+                <ul>
+                    <li><a href="#" target="_blank">中国电信</a></li>
+                    <li><a href="#" target="_blank">国际互联网</a></li>
+                    <li><a href="#" target="_blank">XX电脑城</a></li>
+                    <li><a href="yiyuan_tv_homepage.html" target="_blank">一元市电视台</a></li>
+                </ul>
+
+                <br>
+                <h3>本地商家推荐</h3>
+                <!-- 六毛啤酒屋广告 -->
+                <div class="ad-block-sidebar">
+                    <h4>六毛啤酒屋</h4>
+                    <p>地址：一元市两市区</p>
+                    <p>凉爽夏日，啤酒烤串好去处！</p>
+                </div>
+                <!-- 法自然斋广告 -->
+                <div class="ad-block-sidebar">
+                    <h4>法自然斋</h4>
+                    <p><strong>知天命，改运势，助您人生顺遂！</strong></p>
+                    <p>主理：易学高人 <strong>单道长</strong></p>
+                    <p>业务范围：八字命理、周易预测、专业起名、风水堪舆、择吉日等。</p>
+                    <p>预约电话：(010) 66668888</p>
+                    <p>地址：一元市平安路88号</p>
+                </div>
+                <!-- 电脑维修与组装广告 -->
+                <div class="ad-block-sidebar">
+                    <h4>电脑维修与组装</h4>
+                    <p>您的电脑卡慢？系统崩溃？专业维修，硬件升级，组装配置！</p>
+                    <p><strong>一元市电子城B座101</strong></p>
+                    <p>电话：(010) 77776666</p>
+                </div>
+                <!-- 新起点外语培训广告 -->
+                <div class="ad-block-sidebar">
+                    <h4>新起点外语培训</h4>
+                    <p>学外语，走向世界！</p>
+                    <p>英语、日语、俄语零基础班，口语速成班火热招生中！</p>
+                    <p>地址：一元市文化路99号</p>
+                    <p>电话：(010) 55554444</p>
+                </div>
+
+                <br>
+                <!-- 招聘广告摘要 (在侧边栏) -->
+                <div class="recruitment-ad">
+                    <h3>【招聘启事】</h3>
+                    <p align="center">一元市电视台为<br>《拥抱科学》节目<br>招募外包员工！</p>
+                    <p align="center">详情点击查看。</p>
+                    <p align="center"><a href="tv_recruitment.html" class="button">查看详情</a></p>
+                </div>
+            </td>
+
+            <td class="main-content">
+                <h2>【热门话题】一元市博物馆闹鬼的传说</h2>
+
+                <!-- 主帖 -->
+                <div class="post-entry">
+                    <div class="author-info">
+                        <strong>楼主：探灵者</strong> (IP: 218.xx.xx.123)
+                        &nbsp;&nbsp;&nbsp;&nbsp;发布时间：1998-02-28 10:30:00
+                    </div>
+                    <div class="post-content">
+                        <p>各位论坛的兄弟姐妹，大家好！最近我从一些老人口中听到了关于咱们一元市博物馆的一些古怪传闻，心里一直七上八下的。</p>
+                        <p>据说，每年春天，博物馆园子里的那些桃花，花瓣上都会渗出一种殷红的液体，就好像流血一样，摸上去还带着一丝凉意；到了晚上，整片博物馆的上空都会聚集起密密麻麻的乌鸦，它们不光盘旋，还会发出那种让人心里发毛的凄厉叫声，听得人汗毛直竖！</p>
+                        <p>我听得是半信半疑，但心里又有点好奇。这到底是自然现象，还是真有什么……不干净的东西？有没有哪位高人对此有所了解？或者有胆大的朋友亲身去博物馆探查过？</p>
+                        <p>求大家分享一下信息，说说你们的看法！我胆子小，但求知欲旺盛，期待大家的回复！</p>
+                    </div>
+                    <div class="post-footer">
+                        浏览：5890 | 回复：350
+                    </div>
+                </div>
+
+                <h3>最新回复</h3>
+
+                <!-- 回复1：午夜听风 - 确认传闻 -->
+                <div class="post-entry">
+                    <div class="author-info">
+                        <strong>回复者：午夜听风</strong> (IP: 219.xx.xx.45)
+                        &nbsp;&nbsp;&nbsp;&nbsp;回复时间：1998-02-28 11:15:20
+                    </div>
+                    <div class="post-content">
+                        <p>楼主说的我也听过！我家就住在博物馆附近，有几次晚上确实听到外面乌鸦叫得特别瘆人。我妈说是博物馆年头久了，阴气重，不让靠近。不过桃花流血这个就太玄乎了吧？有没有懂植物学的出来解释一下？</p>
+                    </div>
+                </div>
+
+                <!-- 回复2：历史爱好者 - 科学解释 -->
+                <div class="post-entry">
+                    <div class="author-info">
+                        <strong>回复者：历史爱好者</strong> (IP: 220.xx.xx.88)
+                        &nbsp;&nbsp;&nbsp;&nbsp;回复时间：1998-02-28 13:05:10
+                    </div>
+                    <div class="post-content">
+                        <p>我倒觉得这都是些民间传说，以讹传讹罢了。博物馆里都是文物，哪来那么多鬼怪？至于桃花，可能是某种虫害或者植物本身的汁液，加上光线和心理作用就显得像“流血”了。乌鸦多更正常，可能那里有它们栖息的树林。</p>
+                        <p>大家要相信科学，不要搞封建迷信！</p>
+                    </div>
+                </div>
+
+                <!-- 回复3：单道长 - 玄学解释 -->
+                <div class="post-entry">
+                    <div class="author-info">
+                        <strong>回复者：单道长</strong> (IP: 218.xx.xx.77)
+                        &nbsp;&nbsp;&nbsp;&nbsp;回复时间：1998-02-28 15:00:00
+                    </div>
+                    <div class="post-content">
+                        <p>福生无量天尊。</p>
+                        <p>天地万物，皆有灵性。博物馆乃百年老宅，又藏古物，自然汇聚人气与“物气”。桃花“流血”，或为树精化形；乌鸦夜啼，恐是阴灵示警。</p>
+                        <p>然，万事皆有因果，并非邪祟作乱，多是气场不宁。若缘主心生不安，可寻贫道，以法自然之理，调和阴阳，趋吉避凶。</p>
+                        <p>诸位无需过度忧虑，心正则万邪不侵。贫道座下法自然斋，可助有缘人。</p>
+                        <p>—— <a href="index.html">法自然斋，单道长</a> 敬上</p>
+                    </div>
+                </div>
+
+                <!-- 回复4：好奇宝宝 - 询问具体细节 -->
+                <div class="post-entry">
+                    <div class="author-info">
+                        <strong>回复者：好奇宝宝</strong> (IP: 202.xx.xx.100)
+                        &nbsp;&nbsp;&nbsp;&nbsp;回复时间：1998-02-29 09:00:15
+                    </div>
+                    <div class="post-content">
+                        <p>谢谢各位大神回复！单道长说的太深奥了，有点听不懂… 午夜听风，你住在博物馆附近，有没有亲眼见过“流血的桃花”？是什么颜色的？真的像血吗？</p>
+                        <p>还有，最近论坛速度有点慢，是不是又有人在下载好莱坞大片了？我下了半天的《独立日》才下了10%，想哭……</p>
+                    </div>
+                </div>
+
+                <!-- 回复5：夜班保安 - 亲身经历（部分证实） -->
+                <div class="post-entry">
+                    <div class="author-info">
+                        <strong>回复者：夜班保安</strong> (IP: 218.xx.xx.007)
+                        &nbsp;&nbsp;&nbsp;&nbsp;回复时间：1998-03-01 01:30:00
+                    </div>
+                    <div class="post-content">
+                        <p>我是博物馆的夜班保安，说实话，乌鸦确实特别多，尤其快天亮的时候，叫声那叫一个吵，不是普通的乌鸦叫。桃花的事儿我没仔细观察过，但春天确实有那么一阵子，树下老是湿湿的，颜色也怪怪的，以前没太在意。</p>
+                        <p>不过我们这片晚上真的挺冷的，阴森森的，是不是“阴气重”我不知道，反正风吹过来，感觉能直接穿透骨头。</p>
+                    </div>
+                </div>
+
+                <!-- 回复6：电脑迷 - 讨论新系统（穿插话题） -->
+                <div class="post-entry">
+                    <div class="author-info">
+                        <strong>回复者：电脑迷</strong> (IP: 210.xx.xx.55)
+                        &nbsp;&nbsp;&nbsp;&nbsp;回复时间：1998-03-01 10:45:30
+                    </div>
+                    <div class="post-content">
+                        <p>@好奇宝宝 哥们你用的是什么猫啊？我用28.8K的拨号，下《独立日》这种估计得下几天几夜，哈哈！听说Windows 98马上要出来了，不知道兼容性怎么样，能不能玩更多游戏？</p>
+                    </div>
+                </div>
+
+                <!-- 回复7：老巷子 - 引入龙王传说 -->
+                <div class="post-entry">
+                    <div class="author-info">
+                        <strong>回复者：老巷子</strong> (IP: 221.xx.xx.111)
+                        &nbsp;&nbsp;&nbsp;&nbsp;回复时间：1998-03-01 14:00:00
+                    </div>
+                    <div class="post-content">
+                        <p>说到咱们一元市的这些老传说，博物馆的算小儿科了。我跟你们说个更神的，老辈人传下来的：咱们一元市的龙王爷，不爱吃鱼虾贡品，就爱吃油条！</p>
+                        <p>真的，以前闹旱灾，大家求雨，庙里烧香烧得乌烟瘴气都没用。后来有个老太太，梦见龙王托梦说嘴馋了，要吃油条。第二天老太太就炸了一大筐油条，端到河边拜祭。结果当天晚上就下起了倾盆大雨！所以现在我们这里的老人家都说，给龙王上香不如多捎上一根油条有用！</p>
+                        <p>你们说，博物馆这事儿，是不是也得来点“接地气”的方法才能解决？哈哈。</p>
+                    </div>
+                </div>
+
+                <!-- 回复8：博物君 - 科学再解释 -->
+                <div class="post-entry">
+                    <div class="author-info">
+                        <strong>回复者：博物君</strong> (IP: 222.xx.xx.200)
+                        &nbsp;&nbsp;&nbsp;&nbsp;回复时间：1998-03-02 09:10:00
+                    </div>
+                    <div class="post-content">
+                        <p>关于桃花“流血”，可能是桃树本身分泌的树脂，有些品种的树脂在特定环境下会呈现红色，加上春天湿度变化，很像“流泪”或“流血”。乌鸦大规模聚集一般是夜间栖息地的表现，城市里高大的建筑群很适合它们，它们的叫声在夜间确实会显得比较刺耳。</p>
+                        <p>至于龙王爱吃油条，这明显是民间风俗和美好的愿望结合的产物。科学讲究证据，咱们不能捕风捉影。不过，地方民俗文化倒是很有趣的课题，大家可以多分享！</p>
+                    </div>
+                </div>
+
+                <!-- 留言板占位，提示留言功能 -->
+                <div class="post-entry" style="background-color: #F0F8FF; text-align: center; border: 1px dashed #A0A0A0;">
+                    <p><strong>回复本帖：</strong></p>
+                    <p>本页暂未开通直接回复功能，请前往 <a href="forum.html" class="button">论坛区总览</a> 发表新帖或联系管理员。</p>
+                    <p><small>（更多交互功能将在未来版本开放）</small></p>
+                </div>
+
+                <p align="center"><a href="forum.html" class="button">返回论坛区</a></p>
+            </td>
+        </tr>
+    </table>
+
+    <div class="footer">
+        <p>&copy; 1998 一元市网络论坛 版权所有 | 建议使用IE 3.0 或 Netscape Navigator 3.0 以上浏览器，800x600分辨率观看。</p>
+        <span class="hit-counter">访问量：19980302次</span>
+        <a href="#" class="button">意见反馈</a>
+        <a href="#" class="button">我要发布</a>
+    </div>
+
+</body>
+</html>
